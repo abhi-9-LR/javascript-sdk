@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/favicon-lr.png" type="image/x-icon">
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script type="module" src="assets/js/app.js"></script>
+    <script  src="assets/js/highlight.js"></script>
+    <meta charset="UTF-8" />
+    <title>JS SDK Sample</title>
+</head>
+
+<body>
+  <div class="section-menu">
+      <div class="menu-header">
+          <a href="#"><img src="assets/images/lr-logo.svg" /></a>
+          <span style="display:block;margin-left:20px" id= "header-text">JS SDK Demo</span>
+          <div class="button-group">
+          </div>
+      </div>
+      <div class="vertical-menu">
+          <a class="menu-options" id="btn-login" onclick="login()">Login</a>
+          <a  class="menu-options" id="btn-singnup" onclick="register()">Register</a>
+          <a  class="menu-options" id="btn-logout" onclick="logout()">Logout</a>
+          <a  class="menu-options" id="btn-forgotPassword" onclick="forgotPassword()">Forgot Password</a>
+          <a  class="menu-options" id="btn-updateProfile" onclick="updateProfile()">Update Profile</a>
+      </div>
+  </div>
+
+  <div id="registration_msg">
+
+    A verification email has been sent to your provided email address, please check your email for further instructions
+
+      </div>
+
+
+      <div id="forgot_msg">
+        Password reset information sent to your provided email id, check email for further instruction 
+    
+          </div>
+  <div class="section-main">
+      <div class="right-elem" id="login-elem">
+          <div class="container">
+            <span class="default-text">To see user profile please login.</span>
+
+          </div>
+      </div>
+
+      <div class="right-elem" id="signup-elem">
+          <div class="container">
+
+            <div  class="profile-text">
+              <span class="default-text" id ="profile-text">You are seeing this Section beacause you are logged in.</span></br>
+
+            </div>
+              <lable> 
+                <span class="token"> Access Token:</span>  <pre ><code id="ipt-user-token"></code></pre>
+              </lable>
+       
+
+    <button class="user-Profie-toggel" id ="user-Profie-toggel" onclick= "document.getElementById('profile-div').style.display = 'block';"> Show complete profile response </button>
+    <lable id="profile-div">
+
+   
+      <span class="token">
+        User Profile: 
+      </span> 
+    <pre class="profile">     <code id="ipt-user-profile"></code></pre>
+</lable>
+            
+          </div>
+      </div>
+     
+     
+  </div>
+</body>
